@@ -56,6 +56,8 @@ public class PetStoreData {
 		            }
 		        }
 
+			  this.employees 		= new HashSet<>();
+
  		        if (petStore.getEmployees() != null) {
 		            for (Employee employee : petStore.getEmployees()) {
 		                this.employees.add(new PetStoreEmployee(employee));
