@@ -47,7 +47,7 @@ public class PetStore {
 	private String petStorePhone;
 	
 	
-	@ManyToMany(cascade = CascadeType.PERSIST)
+	@ManyToMany(cascade = CascadeType.ALL )
 	@JoinTable(name = "pet_store_customer", joinColumns = @JoinColumn(name = "pet_store_id"), inverseJoinColumns = @JoinColumn(name = "customer_id"))
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
